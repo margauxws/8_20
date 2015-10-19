@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> prompt </title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" media="screen" href="style.css">
+  <style type="text/css"></style>
+  <script>
+    $(document).ready(function(){
+      $("h2").click(function(){
+        var answerToTheQuestion = prompt("What is your name?");
+        $("h2").html(answerToTheQuestion);
+      $("h3").click(function(){
+        var answerToTheQuestion = prompt("What is your favorite color?");
+        $("h3").html(answerToTheQuestion);
+      $("h4").click(function(){
+          var answerToTheQuestion = prompt("What is your favorite animal?");
+        $("h4").html(answerToTheQuestion);
+        });
+      });
+    });
+  });
+        </script>
+<style>
+</style>
+</head>
+
+<body>
+<div class="paragraph">
+  <h2> name </h2>
+  <h3> favorite color </h3>
+  <h4> favorite animal </h4>
+  <h1> </h1>
+</div>
+</body>
+</html>
