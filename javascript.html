@@ -8,16 +8,32 @@
   <script>
     $(document).ready(function(){
       $("h2").click(function(){
-        var answerToTheQuestion = prompt("What is your name?");
-        $("h2").html(answerToTheQuestion);
-      $("h3").click(function(){
-        var answerToTheQuestion = prompt("What is your favorite color?");
-        $("h3").html(answerToTheQuestion);
-      $("h4").click(function(){
-          var answerToTheQuestion = prompt("What is your favorite animal?");
-        $("h4").html(answerToTheQuestion);
-        });
-      });
+        var favColor = prompt("How much do you like blue, on a scale of 1-5?");
+      if (favColor === "5") {
+        var answer = "You must feel happy because you love blue infinitely.";
+        $("h1").html(answer);
+        document.body.style.backgroundColor = "Blue";
+      }
+      else if (favColor === "4") {
+        var answer = "You must feel pretty alright because you like blue quite a lot.";
+        $("h1").html(answer);
+        document.body.style.backgroundColor = "RoyalBlue";
+      }
+      else if (favColor === "3") {
+        var answer = "You must feel mediocre because you like blue somewhat.";
+        $("h1").html(answer);
+        document.body.style.backgroundColor = "SteelBlue";
+      }
+      else if (favColor === "2") {
+        var answer = "You must feel kind of sad because you dislike blue.";
+        $("h1").html(answer);
+        document.body.style.backgroundColor = "LightSkyBlue";
+      }
+      else if (favColor === "1") {
+        var answer = "You must feel extremely angry because you hate blue.";
+        $("h1").html(answer);
+        document.body.style.backgroundColor = "PowderBlue";
+      }
     });
   });
         </script>
@@ -27,9 +43,7 @@
 
 <body>
 <div class="paragraph">
-  <h2> name </h2>
-  <h3> favorite color </h3>
-  <h4> favorite animal </h4>
+  <h2> ? </h2>
   <h1> </h1>
 </div>
 </body>

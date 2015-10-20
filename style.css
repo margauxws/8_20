@@ -1,10 +1,12 @@
 body {
   font-family: Glacial Indifference, sans-serif;
   width: 100%;
-  color: white;
+  color: blue;
 }
 h1 {
   width: auto; margin: auto;
+  font-size: 20px;
+  line-height: 25px;
 }
 h2 {
   font-size: 20px;
@@ -23,7 +25,8 @@ h4 {
   padding-top: 200px; padding-bottom: 50px;
   position: relative;
   display: block;
-  background-color: lightgray;
+  background-color: white;
+  opacity: 0.5;
   width: 30%;
   margin: auto;
   vertical-align:middle;
